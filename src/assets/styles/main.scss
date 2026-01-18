@@ -1,0 +1,33 @@
+/**
+ * Tailwind entry point
+ * SCSS is kept only because the boilerplate expects .scss
+ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------- Components reutilitzables ---------- */
+
+.btn-primary {
+  @apply inline-flex items-center gap-2 rounded-xl bg-primary px-8 py-2 
+         font-medium text-white transition hover:bg-secondary;
+}
+
+.hero-title {
+  @apply text-5xl md:text-6xl lg:text-7xl 
+         font-bold tracking-wide leading-tight;
+}
+
+.section-footer {
+  @apply max-w-6xl mx-auto px-6 py-12 text-center space-y-4 text-sm;
+}
+
+.participant-card {
+  @apply flex flex-col items-center text-center flex-none w-[22rem];
+  
+}
+
+.card-image {
+  @apply aspect-[4/3] rounded-xl mb-5 object-cover w-full;
+}
